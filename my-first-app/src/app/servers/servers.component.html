@@ -1,0 +1,23 @@
+<!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> --> <!-- one way binding -->
+<input type="text" class="form-control" [(ngModel)]="serverName"> <!-- Two way binding -->
+<p>{{ serverName }}</p>
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()" >Add Server</button>
+<!-- <p [innerText]="allowNewServer"></p> -->
+<!-- <p>{{ serverCreationStatus }}</p> --> <!-- Updates as user types in input -->
+<p *ngIf="serverCreated">Server was created, the server name is {{ serverName }}</p>
+@if(serverCreated){ <!-- only usable in ANgular Version 17 -->
+  <p>Only Visible if server created us true</p>
+}
+
+
+
+
+<!-- <p *ngIf="serverCreated; else noServer">Server was created, the server name is {{ serverName }}</p>
+<ng-template #noServer>
+  <p>No server was created</p>
+</ng-template> -->
+<app-server *ngFor="let server of servers"></app-server>
+
+<success-alert></success-alert>
+
+

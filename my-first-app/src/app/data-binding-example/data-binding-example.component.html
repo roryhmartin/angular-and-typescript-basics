@@ -1,0 +1,15 @@
+<div>
+  <!-- Interpolation: Display the value of 'greeting' -->
+  <h1>{{ greeting }}</h1>
+  
+  <!-- Event Binding: Call 'changeGreeting()' method on button click -->
+  <button (click)="changeGreeting()">Change Greeting</button>
+
+  <!-- Property Binding: Bind 'userInput' property to input value -->
+  <input type="text" [value]="userInput" (input)="userInput = $event.target.value" placeholder="Enter your name">
+
+  <!-- Two-way Binding: Bind 'userInput' property both ways -->
+  <input type="text" [(ngModel)]="userInput" placeholder="Enter your name">
+
+</div>
+
