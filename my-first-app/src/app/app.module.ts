@@ -8,6 +8,7 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { DataBindingExampleComponent } from './data-binding-example/data-binding-example.component';
+import { AngularIfExampleComponent } from './angular-if-example/angular-if-example.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DataBindingExampleComponent } from './data-binding-example/data-binding
     ServersComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    DataBindingExampleComponent
+    DataBindingExampleComponent,
+    AngularIfExampleComponent
   ],
   imports: [
     BrowserModule,

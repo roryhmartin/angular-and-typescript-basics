@@ -1,0 +1,13 @@
+
+<h3>*ngfor examples</h3>
+<h4>example 1 - Rendering a list of strings</h4>
+<li *ngFor="let item of fruit">{{ item }}</li>
+
+<h4>example 2 - Rendering a List of Objects</h4>
+<li *ngFor="let product of products" >{{ product.id }} - {{ product.name }} (£{{ product.price }})</li>
+
+<h4>example 3 - Generate a numbered list</h4>
+<ul>
+  <li *ngFor="index of itemCountArray(); let i = index">{{ i + 1 }}</li>
+</ul>
+
