@@ -8,8 +8,8 @@ import { Recipe } from '../recipes.model';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
-    new Recipe('A Test Recipe', 'This is a test', 'https://images.squarespace-cdn.com/content/v1/626a3e2c3e96e84c4b6db2fb/004ba572-363d-4fce-9c38-c3f0f1cdba16/baked-ziti-with-egg-0416-2.jpg'),
-    new Recipe('A Test Recipe', 'This is a test', 'https://images.squarespace-cdn.com/content/v1/626a3e2c3e96e84c4b6db2fb/004ba572-363d-4fce-9c38-c3f0f1cdba16/baked-ziti-with-egg-0416-2.jpg')
+    new Recipe('A Test Recipe', 'This is a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
+    new Recipe('A Test Recipe', 'This is a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg')
   ];
 
   ngOnInit() {
